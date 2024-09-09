@@ -5,11 +5,11 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 function Header(props) {
     return (
-        <div className="w-full flex items-center justify-between p-4 bg-gray-100 fixed z-999">
+        <div className="container flex items-center justify-between p-4 bg-gray-100 fixed z-999">
             <section>
-                <p className="text-3xl font-semibold">Sahand</p>
+                <p className="text-3xl font-semibold">Sahand Asgharzade</p>
             </section>
-            <section className="flex flex-wrap justify-between items-center gap-2">
+            <section className="flex justify-between items-center gap-2">
                 <div className="relative">
                     <LanguageOutlinedIcon fontSize="large" className="cursor-pointer"/>
                     <p className="absolute top-0 text-white bg-red-800 rounded-full w-4 h-4 flex items-center justify-center text-[12px] ">2</p>
