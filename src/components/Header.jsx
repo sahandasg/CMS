@@ -5,9 +5,9 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 function Header(props) {
     return (
-        <div className="container flex items-center justify-between p-4 bg-gray-100 fixed z-999">
+        <div className="w-full flex items-center justify-between p-4 bg-gray-100 fixed z-999">
             <section>
-                <p className="text-3xl font-semibold">Sahand Asgharzade</p>
+                <p className="font-semibold 2xl:text-3xl sm:text-xl text-[1rem]">Sahand Asgharzade</p>
             </section>
             <section className="flex justify-between items-center gap-2">
                 <div className="relative">

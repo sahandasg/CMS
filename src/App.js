@@ -1,6 +1,6 @@
 import {useRoutes} from "react-router-dom";
 import routes from "./routes";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/Header";
 
 function App() {
