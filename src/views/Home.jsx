@@ -1,6 +1,7 @@
 import React from 'react';
 import Compare from "./../components/Compare"
 import Chart from "../components/Chart";
+import NewMembers from "../components/NewMembers";
 
 function Home(props) {
     let compare = [
@@ -9,7 +10,7 @@ function Home(props) {
         {title: "Cost", mount: "1,890", percent: +13.9},
     ]
 
-    let dataSet = [120,201,87,46,321,187,123,154,152,102,243,98]
+    let dataSet = [120, 201, 87, 46, 321, 187, 123, 154, 152, 102, 243, 98]
 
     return (
         <>
@@ -20,6 +21,9 @@ function Home(props) {
                     ))
                 }
                 <Chart data={dataSet} title="New Users"/>
+                <div>
+                    <NewMembers/>
+                </div>
             </div>
         </>
     );
