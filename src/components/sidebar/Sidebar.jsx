@@ -37,7 +37,7 @@ function Sidebar(props) {
 
     ]
     return (
-        <div className="fixed top-[calc(100vh-(100vh-80px))] w-full h-full bg-gray-100 p-6 pl-8">
+        <div className="basis-[15%] h-[calc(100vh-5rem)] py-6 pr-2 pl-6 border-r-2">
             <ul>
                 <p className="mt-2 mb-2 font-semibold">Dashboard</p>
                 {

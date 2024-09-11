@@ -8,8 +8,10 @@ function App() {
   return (
     <>
         <Header/>
+        <div className="flex flex-row w-full h-full relative top-20">
         <Sidebar/>
         {content}
+        </div>
     </>
   );
 }
