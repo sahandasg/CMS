@@ -1,20 +1,27 @@
 import React from 'react';
 import Compare from "./../components/Compare"
+import Chart from "../components/Chart";
 
 function Home(props) {
     let compare = [
-        {title : "Revenue", mount:"2,415" , percent: -11.4},
-        {title : "Sales", mount:"5,735" , percent: -6.76},
-        {title : "Cost", mount:"1,890" , percent: +13.9},
+        {title: "Revenue", mount: "2,415", percent: -11.4},
+        {title: "Sales", mount: "5,735", percent: -6.76},
+        {title: "Cost", mount: "1,890", percent: +13.9},
     ]
+
+    let dataSet = [120,201,87,46,321,187,123,154,152,102,243,98]
+
     return (
-        <div className="w-full basis-[85%] flex">
-            {
-                compare.map(item=>(
-                    <Compare {...item}/>
-                ))
-            }
-        </div>
+        <>
+            <div className="flex flex-wrap justify-center w-[85%] absolute right-0">
+                {
+                    compare.map(item => (
+                        <Compare key={Math.random()} {...item}/>
+                    ))
+                }
+                <Chart data={dataSet} title="New Users"/>
+            </div>
+        </>
     );
 }
 

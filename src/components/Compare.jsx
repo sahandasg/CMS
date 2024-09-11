@@ -4,7 +4,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 function Compare(props) {
     return (
-        <div className="border-2 rounded p-6 m-6 w-full h-fit">
+        <div className="border-2 rounded p-6 m-4 w-1/4 h-fit">
             <h4 className="font-semibold text-xl">{props.title}</h4>
             <div className="flex gap-4 py-6 items-center">
                 <p className="font-semibold text-3xl">$ {props.mount}</p>

@@ -37,30 +37,30 @@ function Sidebar(props) {
 
     ]
     return (
-        <div className="basis-[15%] h-[calc(100vh-5rem)] py-6 pr-2 pl-6 border-r-2">
+        <div className="fixed w-[15%] h-[calc(100vh-5rem)] py-6 pr-2 pl-6 border-r-2">
             <ul>
                 <p className="mt-2 mb-2 font-semibold">Dashboard</p>
                 {
                     dashboardItems.map(item=>(
-                        <SidebarItem {...item}/>
+                        <SidebarItem key={Math.random()} {...item}/>
                     ))
                 }
                 <p className="mt-2 mb-2 font-semibold">Quick Menu</p>
                 {
                     quickItems.map(item=>(
-                        <SidebarItem {...item}/>
+                        <SidebarItem key={Math.random()} {...item}/>
                     ))
                 }
                 <p className="mt-2 mb-2 font-semibold">Notifications</p>
                {
                     notificationItems.map(item=>(
-                        <SidebarItem {...item}/>
+                        <SidebarItem key={Math.random()} {...item}/>
                     ))
                 }
                 <p className="mt-2 mb-2 font-semibold">staff</p>
                 {
                     staffItems.map(item=>(
-                        <SidebarItem {...item}/>
+                        <SidebarItem key={Math.random()} {...item}/>
                     ))
                 }
             </ul>
