@@ -2,6 +2,7 @@ import React from 'react';
 import Compare from "./../components/Compare"
 import Chart from "../components/Chart";
 import NewMembers from "../components/NewMembers";
+import LastTransActions from "../components/LastTransActions";
 
 function Home(props) {
     let compare = [
@@ -21,8 +22,9 @@ function Home(props) {
                     ))
                 }
                 <Chart data={dataSet} title="New Users"/>
-                <div>
+                <div className="flex w-full">
                     <NewMembers/>
+                    <LastTransActions/>
                 </div>
             </div>
         </>
